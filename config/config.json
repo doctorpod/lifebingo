@@ -1,5 +1,12 @@
 {
-  "development": {},
+  "development": {
+    "use_env_variable": "DATABASE_URL"
+  },
   "test": {},
-  "production": {}
+  "demo": {
+    "use_env_variable": "DATABASE_URL"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL"
+  }
 }
