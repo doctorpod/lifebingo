@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const models = require("../models");
 
-models.sequelize.authenticate().then(() => console.log("yippie"));
+models.sequelize.authenticate().then(() => console.log("Connected to DB"));
 
 router.get("/", (req, res) =>
   models.Card.findAll()
