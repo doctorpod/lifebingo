@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "docker": "docker build -t life_bingo:1 . && docker run -d -p 8888:8888 --env-file .env.docker life_bingo:1"
   },
   "author": "Andy White",
   "license": "ISC",
