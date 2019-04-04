@@ -11,15 +11,13 @@ Make your life better by incremental habit tweaks inspired by bingo-style boards
 
 ## Setup
 
-Set env vars `NODE_ENV` and `DATABASE_URL`.
+- Set env vars `NODE_ENV` and `DATABASE_URL`.
 
-Create database:
+- Create database
 
-    sequelize db:create
+- Seed database (optional):
 
-Seed database (optional):
-
-    sequelize db:seed:all
+      knex seed:run
 
 ## Run
 
