@@ -1,10 +1,8 @@
-<h1>All cards</h1>
-
 {{#each cards}}
 <div class="card" data-controller="card">
   <div class="card-body">
-    <h5 class="card-title">{{name}}</h5>
-    <p class="card-text">Bobbins.</p>
+    <h5 class="card-title">{{title}}</h5>
+    <p class="card-text">{{goal}} per {{goal_period}}</p>
   </div>
 </div>
 {{else}}
